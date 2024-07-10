@@ -1,0 +1,11 @@
+a<h1>
+Hi!, This is my blog Application
+</h1>
+<ul>
+<% @articles.each do |article| %>
+    <a href = "articles/<%= article.id %>" >
+    <li><%= article.title %></li>
+    </a>
+    <li><%= article.body %></li>
+ <% end %>
+</ul>
